@@ -1,0 +1,22 @@
+@import "../../globals.scss";
+
+.Container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  & .P-panel{
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    & .P-img{
+      border-radius: 50%;
+      height: 40%;
+      overflow: hidden;
+      transform: scale(.8);
+      border: .5rem solid linear-gradient(to top, blue, red);
+      & img{
+        width: 100%;
+      }
+    }
+  }
+}
